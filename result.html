@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="algae.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Columnar Transposition</title>
+</head>
+
+<body><div class="container">
+
+        <div class="one">
+            <h1>Columnar Transposition Encryption Results</h1>
+        </div>
+        <div class="one">
+            <p>Original Message</p> <span id="original-message"></span>
+        </div>
+        <div class="one">
+            <p>Encryption Key Used </p> <span id="encryption-key-used"></span>
+        </div>
+        <div class="one">
+            <p>Ciphertext </p> <span id="ciphertext"></span>
+        </div>
+        <div class="two"><a href="index.html">Encrypt</a></div>
+</div>
+    <script>
+        document.getElementById('original-message').textContent = localStorage.getItem('originalText');
+        document.getElementById('encryption-key-used').textContent = localStorage.getItem('encryptionKey');
+        document.getElementById('ciphertext').textContent = localStorage.getItem('cipherText');
+    </script>
+</body>
+</html>
